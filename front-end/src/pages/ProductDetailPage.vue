@@ -52,6 +52,7 @@ export default {
     async signIn() {
       const email = prompt('Please enter your email to sign in:');
       const auth = getAuth();
+      console.log(auth, 'AUTHENTIC CONST')
       const actionCodeSettings = {
         url: `http://localhost:8080/products/${this.$route.params.productId}`,
         handleCodeInApp: true,

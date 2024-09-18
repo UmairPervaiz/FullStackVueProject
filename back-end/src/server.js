@@ -1,12 +1,13 @@
 import express from 'express';
 import { MongoClient } from 'mongodb';
 import path from 'path';
+require('dotenv').config({ path: '../.env' });
 
 const app = express();
 app.use(express.json());
 app.use('/images', express.static(path.join(__dirname, '../assets')));
 
-const client = new MongoClient('mongodb://localhost:27017');
+const client = new MongoClient(process.env.DATABASE_URL);
 client.connect();
 const db = client.db('vue_app');
 
