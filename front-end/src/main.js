@@ -11,13 +11,13 @@ import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: process.env.VUE_APP_FIREBASE_APIKEY,
-  authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.VUE_APP_FIREBASE_STORGAE_BUCKET,
-  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.VUE_APP_FIREBASE_APP_ID,
-  measurementId: process.env.VUE_APP_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyDBhNgudDWqUxpc-d0NN4EkYKLahkigNd8",
+  authDomain: "vueproject-7.firebaseapp.com",
+  projectId: "vueproject-7",
+  storageBucket: "vueproject-7.appspot.com",
+  messagingSenderId: "1003686712839",
+  appId: "1:1003686712839:web:2b8769956c68c09b4d7ca2",
+  measurementId: "G-8YDDLQX2RV"
 };
 
 // Initialize Firebase

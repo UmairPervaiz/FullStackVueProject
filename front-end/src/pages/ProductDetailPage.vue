@@ -54,7 +54,8 @@ export default {
       const auth = getAuth();
       console.log(auth, 'AUTHENTIC CONST')
       const actionCodeSettings = {
-        url: `http://localhost:8080/products/${this.$route.params.productId}`,
+        // url: `http://localhost:8080/products/${this.$route.params.productId}`,
+        url: `https://my-ecommerse-website.onrender.com/products/${this.$route.params.productId}`,
         handleCodeInApp: true,
       }
       await sendSignInLinkToEmail(auth, email, actionCodeSettings);
